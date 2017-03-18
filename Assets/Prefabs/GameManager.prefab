@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1013746492311722}
+  m_IsPrefabParent: 1
+--- !u!1 &1013746492311722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4877360319057780}
+  - component: {fileID: 114513687385346806}
+  - component: {fileID: 114419073036397990}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4877360319057780
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1013746492311722}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.93, y: 4.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114419073036397990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1013746492311722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f464de6acb9ae0b4d89675b0d5a1a9ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 75
+  rows: 50
+  platformCount:
+    minimum: 50
+    maximum: 100
+  movingPlatformCount:
+    minimum: 1
+    maximum: 10
+  armourCount:
+    minimum: 1
+    maximum: 5
+  enemyCount:
+    minimum: 1
+    maximum: 5
+  doorCount:
+    minimum: 5
+    maximum: 10
+  platformScaleMin: {x: 0.75, y: 0.1, z: 0}
+  platformScaleMax: {x: 5, y: 0.8, z: 0}
+  platformTiles:
+  - {fileID: 1050733821708948, guid: 7b13e3fb4c24d064595d2bc9eb1f812f, type: 2}
+  movingPlatformTiles:
+  - {fileID: 1368114529009692, guid: 74d47669988a4184ea7a4947be375978, type: 2}
+  armourTiles:
+  - {fileID: 1278834667492228, guid: fc2bc3aabc368be4a80962db511093be, type: 2}
+  enemyTiles:
+  - {fileID: 1655422588551498, guid: e9c88e60602a7934db87e41aab08536e, type: 2}
+  doorTiles:
+  - {fileID: 1265618519212204, guid: 22f539944a6e6284c9f6e3a0ae91c090, type: 2}
+  platformSet: {fileID: 0}
+--- !u!114 &114513687385346806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1013746492311722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fb0b1b49546f94b9e419807d19791c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
