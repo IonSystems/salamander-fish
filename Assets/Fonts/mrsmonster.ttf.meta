@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3a9a65fb56fec476ab7755e614d1d39f
+timeCreated: 1489855976
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mrs. Monster
+  fontNames:
+  - Mrs. Monster
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

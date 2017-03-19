@@ -38,10 +38,6 @@ public class Enemy : MonoBehaviour
 	private Vector2 moveDirection;
 	Rigidbody2D rb;
 
-    [Header("Optional: ")]
-    [SerializeField]
-    private StatusIndicator statusIndicator;
-
     void Start()
     {
         stats.Init();
@@ -54,21 +50,6 @@ public class Enemy : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 
     }
-
-    public void DamageEnemy(int damage)
-    {
-        stats.curHealth -= damage;
-        if (stats.curHealth <= 0)
-        {
-            GameMaster.KillEnemy(this);
-        }
-
-        if (statusIndicator != null)
-        {
-            statusIndicator.SetHealth(stats.curHealth, stats.maxHealth);
-        }
-    }
-
 
 
 	void OnCollisionEnter2D(Collision2D collision)
